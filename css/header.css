@@ -1,0 +1,168 @@
+/* Стили хедера (styles header) */
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000cc;
+	z-index: 2;
+}
+
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between; /**/
+	height: 45px;
+	align-items: center;
+}
+
+.header__logo {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+
+.header__burger {
+	display: none;
+}
+
+.header__list {
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.header__list li {
+	list-style: none;
+}
+
+.header__link {
+	color: #F5F5F7;
+	font-size: 14px;
+	padding: 14px 20px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.header__link:hover {
+	padding: 14px 20px;
+	background-color: #ffffff15;
+}
+
+@media (max-width: 767px) {
+	.header__body {
+		height: 50px;
+	}
+	.header__logo {
+		color: #fff;
+		text-decoration: none;
+		font-size: 18px;
+		overflow: hidden;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+	.header__burger.active:before {
+		transform: rotate(-45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform: rotate(45deg);
+		bottom: 9px;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.header__menu {
+		text-align: center;
+		overflow: auto;
+		position: fixed;
+		text-transform: uppercase;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #333333;
+		padding: 120px 20px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__menu.active {
+		top: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__list {
+		display: block;
+	}
+	.header__list li {
+		margin: 0px 0px 20px 0px;
+	}
+	.header__link {
+		font-size: 36px;
+		margin: 30px;
+	
+  }
+}
+
+.content__text {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.content__text p {
+	margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 767px) {
+	body.lock {
+		overflow: hidden;
+	}
+	.content {
+		padding: 60px 0px 0px 0px;
+	}
+}

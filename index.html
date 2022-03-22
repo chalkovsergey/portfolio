@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- /Styles -->
     <title>Главная страница</title>
 </head>
 <body>
@@ -12,9 +16,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <a href="index.html" class="header__logo">
-                        <img src="img/logotype/logo.png" alt="">
-                    </a>
+                    <a href="index.html" class="header__logo">Сергей Чалков</a>
                     <div class="header__burger">
                         <span></span>
                     </div>
@@ -27,10 +29,10 @@
                                 <a href="about.html" class="header__link">Обо мне</a>
                             </li>
                             <li>
-                                <a href="contact.html" class="header__link">Контакты</a>
+                                <a href="portfolio.html" class="header__link">Портфолио</a>
                             </li>
                             <li>
-                                <a href="project.html" class="header__link">Проекты</a>
+                                <a href="contact.html" class="header__link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -40,18 +42,43 @@
         <div class="main">
             <div class="container">
                 <div class="content__text">
-                    <h1 class="title">Главная</h1>
+                    <h1 class="title">Привет!</h1>
+                    <p class="p__descr">Меня зовут Сергей, <br> Я занимаюсь разработкой сайтов.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <footer class="footer">
-                <p>&copy; Сергей Чалков, все права защищены.</p>
+            <div class='footer__container container'>
+                <div class="footer__row">
+                    <!-- футер лого -->
+                    <div class="footer__main">
+                        <a class="footer__logo logo" target="_blank" href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA" >Сергей Чалков</a>
+                        <div class="footer__descr">Про разработку</div>
+                    </div>				
+                    <!-- Первая колонка -->
+                    <div class="footer__column footer__column_1">
+                        <div class="footer__title"><span>Соц. сети</span></div>
+                        <a target="_blank" href="https://www.facebook.com/sergeychalkov" class="footer__link">FaceBook</a>
+                        <a target="_blank" href="https://www.instagram.com/sergeychalkov/" class="footer__link">Instagram</a>
+                    </div>
+                    <!-- Вторая колонка -->
+                    <div class="footer__column footer__column_2">
+                        <div class="footer__title"><span>Полезное</span></div>
+                        <a target="_blank" href="#" class="footer__link">Игра выживание</a>
+                        <a target="_blank" href="#" class="footer__link">Анонимный чат</a>
+                        <a target="_blank" href="#" class="footer__link">Блокнот</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </div>
 
-    <!--Подключаем библиотеку-->
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/efa75b79e2.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
