@@ -62,7 +62,7 @@
 	padding: 14px 20px;
 	background-color: #ffffff15;
 }
-
+/*
 @media (max-width: 767px) {
 	.header__body {
 		height: 50px;
@@ -148,8 +148,14 @@
 	
   }
 }
+*/
 
 .content__text {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.content__text index {
 	font-size: 18px;
 	line-height: 25px;
 }

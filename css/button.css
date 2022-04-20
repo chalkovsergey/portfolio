@@ -13,39 +13,39 @@ button a {
 
 .btn__github {
 	background: #000000;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .btn__github:hover {
 	transition: all 0.3s;
 	background: #333;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .btn__vk {
 	background: #000000;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .btn__vk:hover {
 	transition: all 0.3s;
 	background: #0077ff;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .btn__telegram {
 	background: #000000;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .btn__telegram:hover {
 	transition: all 0.3s;
 	background: #0088cc;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 50%;
 }
