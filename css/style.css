@@ -34,12 +34,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main {
-	padding: 200px 20px 30px 30px;
+	padding: 175px 20px 30px 30px;
 	flex: 1 1 auto;
 }
 
-.main_about {
-	padding: 100px 20px 30px 30px;
+.about {
+	padding: 75px 20px 30px 30px;
 	flex: 1 1 auto;
 }
 
